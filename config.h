@@ -41,7 +41,7 @@ static const int timeoffset = 120;
 static const int runonce = 1;
 
 /* command to be run after [time] has passed */
-static const char *command = "test $(cat /sys/class/power_supply/AC/online) -eq 0 && systemctl suspend -i";
+static const char *command = "test $(cat /sys/class/power_supply/AC/online) -eq 0 && loginctl suspend -i";
 
 /* Enable blur */
 #define BLUR
